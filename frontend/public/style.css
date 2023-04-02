@@ -53,7 +53,8 @@
   }
   
   nav ul li a {
-    display: block;
+    display: flex;
+    align-items: center;
     color: #333;
     text-decoration: none;
     padding: 10px;
@@ -62,6 +63,12 @@
   
   nav ul li a:hover {
     background-color: #ddd;
+  }
+  
+  nav ul li a img {
+    display: inline-block;
+    height: 30px;
+    margin-right: 5px;
   }
   
   .login {
@@ -90,6 +97,20 @@
   
   .login button[type="submit"]:hover {
     background-color: #666;
+  }
+  
+  /* Additional code for the form */
+  .nav-wrapper form {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+  }
+  
+  .nav-wrapper input[type="text"],
+  .nav-wrapper input[type="password"],
+  .nav-wrapper button[type="submit"] {
+    padding: 8px;
+    margin: 0;
   }
   
   /* Main styles */
@@ -152,5 +173,84 @@
   .features ul {
     list-style: none;
     margin: 0;
-   
+  }
+  
+  .post {
+    padding: 40px 0;
+    text-align: center;
+  }
+  
+  .post h2 {
+    margin-bottom: 20px;
+  }
+  
+  .post form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .post input[type="file"],
+  .post input[type="text"] {
+    margin-bottom: 20px;
+  }
+  
+  .comments {
+    padding: 40px 0;
+  }
+  
+  .comments h2 {
+    margin-bottom: 20px;
+  }
+  
+  .comments ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .comments li {
+    margin-bottom: 20px;
+  }
+  
+  .comments p {
+    margin-bottom: 10px;
+  }
+  
+  .comments strong {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .comments form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .comments input[type="text"],
+  .comments textarea {
+    margin-bottom: 20px;
+    padding: 10px;
+  }
+  
+  .contact {
+    padding: 40px 0;
+    text-align: center;
+  }
+  
+  .contact h2 {
+    margin-bottom: 20px;
+  }
+  
+  .contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .contact input[type="text"] {
+    margin-bottom: 20px;
+    padding: 10px;
+  }
   
