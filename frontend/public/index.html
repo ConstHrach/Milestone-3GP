@@ -11,6 +11,13 @@
           <li><a href="#">Home</a></li>
           <li><a href="#">Features</a></li>
           <li><a href="#">Contact</a></li>
+          <li class="login">
+            <form>
+              <input type="text" name="username" placeholder="Username">
+              <input type="password" name="password" placeholder="Password">
+              <button type="submit">Log In</button>
+            </form>
+          </li>
         </ul>
       </nav>
     </header>
@@ -19,36 +26,6 @@
         <h1>Welcome to HelloWorld()</h1>
         <p>Connect with friends and share your life</p>
         <a href="#" class="btn btn-primary">Get Started</a>
-      </section>
-      <section class="login">
-        <h2>Login</h2>
-        <form>
-          <input type="text" name="username" placeholder="Username">
-          <input type="password" name="password" placeholder="Password">
-          <button type="submit" class="btn btn-primary">Login</button>
-        </form>
-      </section>
-      <section class="picture-posting">
-        <h2>Post a Picture</h2>
-        <form>
-          <input type="file" name="picture">
-          <button type="submit" class="btn btn-primary">Post Picture</button>
-        </form>
-      </section>
-      <section class="comments">
-        <h2>Comments</h2>
-        <ul>
-          <li>
-            <p>Comment 1</p>
-          </li>
-          <li>
-            <p>Comment 2</p>
-          </li>
-        </ul>
-        <form>
-          <input type="text" name="comment" placeholder="Write a comment">
-          <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
       </section>
       <section class="features">
         <h2>Features</h2>
@@ -59,18 +36,35 @@
           <li><i class="fas fa-calendar"></i> Create events and invite friends</li>
         </ul>
       </section>
+      <section class="post">
+        <h2>Post a Picture</h2>
+        <form>
+          <input type="file" name="picture">
+          <input type="text" name="caption" placeholder="Caption">
+          <button type="submit" class="btn btn-primary">Post</button>
+        </form>
+      </section>
+      <section class="comments">
+        <h2>Comments</h2>
+        <ul>
+          <li>
+            <p><strong>John Doe:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec mi consequat, tempus velit quis, aliquam odio. Donec posuere ante et augue facilisis, a fringilla turpis vestibulum. Sed euismod, nunc eget elementum congue, lacus quam pellentesque urna, vel posuere enim mauris eu mi.</p>
+          </li>
+          <li>
+            <p><strong>Jane Smith:</strong> Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse at lacus imperdiet, dignissim velit ac, feugiat lacus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+          </li>
+          <li>
+            <p><strong>Bob Johnson:</strong> Proin semper dui id velit pretium, eget consequat risus pharetra. Nunc rhoncus, velit non pharetra venenatis, libero ipsum pretium justo, vel scelerisque urna nisl ac mauris. Praesent blandit, quam eu malesuada luctus, tellus est gravida tellus, sed cursus nibh nibh et mi.</p>
+          </li>
+        </ul>
+        <form>
+          <input type="text" name="name" placeholder="Name">
+          <textarea name="comment" placeholder="Comment"></textarea>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </section>
       <section class="contact">
         <h2>Contact Us</h2>
         <form>
           <input type="text" name="name" placeholder="Name">
-          <input type="email" name="email" placeholder="Email">
-          <textarea name="message" placeholder="Message"></textarea>
-          <button type="submit" class="btn btn-primary">Send</button>
-        </form>
-      </section>
-    </main>
-    <footer>
-      <p>&copy; HelloWorld() 2023</p>
-    </footer>
-  </body>
-</html>
+          <input type
